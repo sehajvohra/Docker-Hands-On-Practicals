@@ -43,12 +43,15 @@ async def log_requests(request: Request, call_next):
         raise
 
 
+
 @app.get("/")
 def root():
     return {
         "application": "Student API",
         "framework": "FastAPI",
         "status": "running",
+        "sapid": "590011624",
+        "location": "Dehradun",
     }
 
 
